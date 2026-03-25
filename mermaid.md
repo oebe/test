@@ -28,4 +28,5 @@ erDiagram
         int id
         string code
     }
+
     ```
