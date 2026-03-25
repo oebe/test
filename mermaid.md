@@ -4,8 +4,8 @@ erDiagram
     EXPERIMENT ||..|{ MEASUREMENT : includes
     EXPERIMENT }o--|| MACRO : links
     EXPERIMENT }o--|| PROTOCOL : links
-    USER ||--o{ MACRO : links
-    USER ||--o{ PROTOCOL : links
+    USER |o--o{ MACRO : owner
+    USER |o--o{ PROTOCOL : owner
     USER {
         string id
         string name
