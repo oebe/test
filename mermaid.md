@@ -26,5 +26,6 @@ erDiagram
     }
     MACRO {
         int id
-        string code}
+        string code
+    }
     ```
