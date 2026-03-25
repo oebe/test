@@ -4,29 +4,38 @@ erDiagram
     EXPERIMENT ||..|{ MEASUREMENT : includes
     EXPERIMENT }o--|| MACRO : links
     EXPERIMENT }o--|| PROTOCOL : links
+    USER ||--o{ MACRO : links
+    USER ||--o{ PROTOCOL : links
     USER {
-        int id
+        string id
         string name
         string email
     }
     EXPERIMENT {
         string id
         string status
-        int protocolId
-        int macroId
+        string protocolId
+        string macroId
+        string etc
+
     }    
     MEASUREMENT {
         string id
-        int experimentlId
+        string experimentlId
         string rawMeasurement
+        string etc
     }
     PROTOCOL {
-        int id
+        string id
         string code
+        string creator
+        string etc
     }
     MACRO {
-        int id
+        string id
         string code
+        string creator
+        string etc
     }
 
 ```
