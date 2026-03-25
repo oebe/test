@@ -1,4 +1,4 @@
-erDiagram
+````erDiagram
     USER }|..|{ EXPERIMENT : role
     EXPERIMENT ||..|{ MEASUREMENT : includes
     EXPERIMENT }o--|| MACRO : links
@@ -26,4 +26,4 @@ erDiagram
     MACRO {
         int id
         string code}
-    
+    ````
