@@ -29,4 +29,4 @@ erDiagram
         string code
     }
 
-    ```
+```
